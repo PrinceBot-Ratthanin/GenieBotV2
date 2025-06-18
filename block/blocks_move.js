@@ -226,7 +226,7 @@ Blockly.Blocks["Move_To_partH"] = {
       .appendField(new Blockly.FieldImage(imagePath, 60, 60, "*"));
     this.appendDummyInput()
           .appendField("เลือกทางออก")
-          .appendField(new Blockly.FieldDropdown([["ด้านซ้าย","0"],["ด้านหน้า","1"], ["ด้านขวา","2"]]), "direction");
+          .appendField(new Blockly.FieldDropdown([["ด้านซ้าย","0"],["ด้านหน้า","1"], ["ด้านขวา","2"],["ด้านซ้าย Turn","4"], ["ด้านขวา Turn","5"]]), "direction");
 
     this.setPreviousStatement(true);
     this.setNextStatement(true);
@@ -292,7 +292,7 @@ Blockly.Blocks["Move_To_partK"] = {
     row.appendField(new Blockly.FieldDropdown(imageOptions), `IMG_SELECT_${1}`);
     this.appendDummyInput()
           .appendField("เลือกทางออก")
-          .appendField(new Blockly.FieldDropdown([["ด้านซ้าย","0"],["ด้านหน้า","2"], ["ด้านขวา","1"]]), "direction");
+          .appendField(new Blockly.FieldDropdown([["ด้านซ้าย","0"],["ด้านหน้า","2"], ["ด้านขวา","1"],["ด้านซ้าย Turn","4"], ["ด้านขวา Turn","5"]]), "direction");
 
     this.setPreviousStatement(true);
     this.setNextStatement(true);
