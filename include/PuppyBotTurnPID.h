@@ -193,7 +193,14 @@ int getClosestAngle(float currentAngle) {
 void turnByAngle_fix(int turnAngle) {
   //for (int i = 0; i < 10; i++) updateContinuousYaw();
   //updateContinuousYaw();                      // อัปเดตค่า Yaw ต่อเนื่อง
-  float currentYaw = conYaw;      // อ่านค่า Yaw ปัจจุบัน
+  ao();
+  float currentYaw = 0.00;
+  for(int i =0;i<100;i++){
+    currentYaw += conYaw;
+    delay(0.5);
+  }
+  currentYaw = currentYaw /100;
+         // อ่านค่า Yaw ปัจจุบัน
 
   float roughTargetYaw = currentYaw + turnAngle;  // มุมเป้าหมายโดยตรง
   int snappedTargetYaw = getClosestAngle(roughTargetYaw);  // Snap ไปมุม 0,90,180,270,360
