@@ -8,5 +8,5 @@ module.exports = {
   email: "print081@gmail.com",
   git: "https://github.com/PrinceBot-Ratthanin/GenieBotV2",
   image: "/static/robot.png",
-  version: "1.0.0",
+  version: "1.2.0",
 };
